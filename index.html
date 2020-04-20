@@ -29,9 +29,9 @@
             <p id="p1">&copy 2020 | Ethan Tindall | Utah | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
             <p id="p2">Last Updated: <span id="time"></span></p>
 <script>
-    const options = {weekday: "long", day: "numeric", month: "long", year:"numeric"};
-    document.getElementById("time").textContent = new Date().toLocaleDateString("en-US", options);
-
+    const date = new Date();
+    const disp = date.getDay() + "/" + date.getMonth() + "/" + date.getYear + "  " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+    document.getElementById("time").innerHTML = disp;
 </script>
         </footer>
 	</body>
