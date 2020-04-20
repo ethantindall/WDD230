@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content = "WDD 230 Course Portal Home Page">
         <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="index.js"></script>
 		<title>WDD 230</title>
 	</head>
 	<body>
@@ -28,12 +29,7 @@
         <footer>
             <p id="p1">&copy 2020 | Ethan Tindall | Utah | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
             <p id="p2">Last Updated: <span id="time"></span></p>
-<script>
-    var lastmod = document.lastModified;
-    const date = new Date(document.lastModified);
-    const disp = (date.getMonth() + 1) + "/" + (date.getDay() + 1) + "/" + date.getFullYear() + "  " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
-    document.getElementById("time").innerHTML = disp;
-</script>
+
         </footer>
 	</body>
 </html>

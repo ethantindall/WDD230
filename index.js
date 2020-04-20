@@ -1,4 +1,4 @@
-var date = today.getFullYear() + '/' + (today.getMonth() + 1) + '/' + today.getDate();
-var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-
-document.getElementById("time").innerHTML = date;
+var lastmod = document.lastModified;
+const date = new Date(document.lastModified);
+const disp = (date.getMonth() + 1) + "/" + (date.getDay() + 1) + "/" + date.getFullYear() + "  " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+document.getElementById("time").innerHTML = disp;
