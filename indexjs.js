@@ -1,7 +1,3 @@
-var year = new Date();
-document.getElementById("currentyear").textContent = year.getFullYear();
-
-var lastmod = document.lastModified;
 const date = new Date(document.lastModified);
     
 let hours = date.getHours();
