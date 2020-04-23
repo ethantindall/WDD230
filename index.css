@@ -11,7 +11,7 @@ main {
 #banner,
 footer {
     color: white;
-    background-color: rgb(100, 50, 25);
+    background-color: #913434;
     border-radius: 7px;
     height: 80px;
 }
@@ -30,6 +30,7 @@ h1 {
     padding-left: 15%;
     padding-top: 7px;
     vertical-align: middle;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 3.5em;
     font-weight: 500;
 }
@@ -37,6 +38,7 @@ h2 {
     font-size: 1.7em;
     font-weight: 400;
     margin-bottom: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 img {
