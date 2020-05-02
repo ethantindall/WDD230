@@ -4,7 +4,7 @@ main {
 }
 body{
     margin: 0 auto;
-    max-width: 1024px;
+    max-width: 1000px;
     font-family: 'Josefin Sans', sans-serif;
 }
 article {
@@ -30,4 +30,9 @@ img {
 }
 p {
     padding: 1px 3px;
+}
+header {
+    color: white;
+    background-color: #796565;
+    margin-top: 0px;
 }
