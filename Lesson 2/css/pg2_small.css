@@ -10,7 +10,7 @@ body{
 article {
     border: 1px solid black;
     border-radius: 7px;
-    margin: 15px 15px;
+    margin: 7px;
     max-width: 300px;
     background-color: lightgrey;
 }
