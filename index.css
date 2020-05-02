@@ -10,7 +10,7 @@ main {
 #banner,
 footer {
     color: white;
-    background-color: #796565;
+    background-color: #913434;
     border-radius: 7px;
     
 }
@@ -51,4 +51,9 @@ img {
     padding-bottom: 10px;
     margin-top: -35px;
 }
-
+main a {
+    color: blue;
+}
+footer a {
+    color: white;
+}

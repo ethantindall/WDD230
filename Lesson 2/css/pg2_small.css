@@ -27,12 +27,26 @@ h3 {
 }
 img {
     width:100%;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
 }
 p {
     padding: 1px 3px;
 }
 header {
     color: white;
-    background-color: #796565;
+    background-color: #913434;
     margin-top: 0px;
 }
+header h1 {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 3em;
+}
+header h2 {
+    padding-top: -5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 2.5em;
+}
+
