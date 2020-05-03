@@ -14,5 +14,7 @@ if (minutes < 10) {
     let min = minutes.toString();
     minutes = "0" + min;}
   
-document.getElementById("timedisp").textContent = (date.getMonth() + 1) + "/" + (date.getDay() - 4) 
+document.getElementById("timedisp").textContent = (date.getMonth() + 1) + "/" + (date.getDate()) 
     + "/" + date.getFullYear() + "  " + hours + ":" + minutes + ":" + seconds;
+
+document.getElementById("currentyear").textContent = (date.getFullYear());

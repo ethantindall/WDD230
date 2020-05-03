@@ -1,22 +1,22 @@
 @media (min-width: 32.5em) {
     body {
-        margin: 0 auto;
+        padding: 0 25%;
         width: 760px;
-    }    
+        font-family: 'Jost', sans-serif;
+    }
         img {
         float: right;
         height: 200px;
-        position: relative;
-        top: -90px;
-        right: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
     }
     #banner,
     footer {
         height: 80px;
     }
     #p1 {
-        padding-top: 15px;
-        padding-left: 110px;
+        padding-top: 0px;
+        padding-left: 0px;
     }
     #p2 {
         padding-left: 0px;

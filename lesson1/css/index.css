@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-size: medium;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Jost', sans-serif;
 }
 main {
     padding-left: 10px;
@@ -9,6 +9,7 @@ main {
 
 #banner,
 footer {
+    padding-top: 5px;
     color: white;
     background-color: #C7342A;
     border-radius: 7px;
@@ -20,7 +21,7 @@ footer {
 }
 
 #p1 {
-    padding-top: 10px;
+    padding-top: 0px;
 }
 
 #p2 {
@@ -29,12 +30,9 @@ footer {
 }
 
 h1 {
-    padding-left: 15%;
-    padding-top: 16px;
-    vertical-align: middle;
-
-    font-size: 3.5em;
+    font-size: 3.7em;
     font-weight: 500;
+    text-align: center;
 }
 h2 {
     font-size: 1.7em;
@@ -49,7 +47,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 10px;
-    margin-top: -35px;
+    margin-top: 10px;
 }
 main a {
     color: blue;
