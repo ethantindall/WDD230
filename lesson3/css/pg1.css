@@ -1,0 +1,84 @@
+/*Small*/
+
+.row {
+    display: flex;
+    flex: row wrap;
+    justify-content: center;
+    background-color: #6eb4d1;
+}
+
+.logo {
+    align-self: flex-start;
+    max-width: 40px;
+    padding-left: -10px;
+    padding-top: 3.7%;
+}
+h1 {
+    font-size: 1.5em;
+    padding-left: 5px;
+    padding-top: 1%;
+    align-self: center;
+}
+h2 {
+    padding-left: 4%;
+}
+p {
+    padding-left: 7%;
+    padding-right: 7%;
+}
+.banner-image {
+    width: 100%;
+    box-shadow: 0px 3px 5px sgray;
+}
+
+nav {
+    background-color: #6eb4d1;
+    margin-top: -4px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	text-align: center;
+	padding: 0.4rem;
+	text-decoration: none;
+    font-size: 0.95rem;
+    font-family: 'Fredoka One', cursive; 
+    color: black;
+}
+a:hover {
+	background-color: #bbb;
+	color: #36454f;
+/*
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: #6eb4d1;
+    margin-left: -40px;
+    margin-top: -4px;
+}
+
+nav ul li {
+    text-align: center;
+    font-family: 'Fredoka One', cursive;  
+    color: black;
+    padding: 3px 0px 0px 0px;
+    font-size: 1.1em;
+}
+.row:hover {
+    background-color: lime;
+}
+nav ul {
+    list-style-type: none;
+}
+nav a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
