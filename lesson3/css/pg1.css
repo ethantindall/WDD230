@@ -52,34 +52,15 @@ nav ul li a {
 }
 a:hover {
 	background-color: #bbb;
-	color: #36454f;
-/*
-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
+    color: #36454f;
+}
+button {
     background-color: #6eb4d1;
-    margin-left: -40px;
-    margin-top: -4px;
-}
-
-nav ul li {
     text-align: center;
-    font-family: 'Fredoka One', cursive;  
+    font-size: 0.95rem;
+    font-family: 'Fredoka One', cursive; 
     color: black;
-    padding: 3px 0px 0px 0px;
-    font-size: 1.1em;
-}
-.row:hover {
-    background-color: lime;
-}
-nav ul {
-    list-style-type: none;
-}
-nav a {
-    text-decoration: none;
+    border: none;
     width: 100%;
-    height: 100%;
+    height: 35px;
 }
-*/
