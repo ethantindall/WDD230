@@ -1,0 +1,27 @@
+@media (min-width: 700px){
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+    .banner-image {
+        width: 100%;
+    }
+    article {
+        flex-direction: row;
+        width: 98%;
+    }
+    #articleleft {
+        display: flex;
+        flex-direction: column;
+    }
+    article img {
+        height: 200px;
+    }
+    #big {
+        display: inline-block;
+    }
+    #small {
+        display:none;
+    }
+
+}
