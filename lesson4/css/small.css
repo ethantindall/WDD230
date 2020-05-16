@@ -169,7 +169,7 @@ footer {
     display: none;
 }
 .small {
-    display: inline-block;
+    display: block;
 }
 .hide {
     display:none;

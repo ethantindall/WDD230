@@ -1,0 +1,33 @@
+@media (min-width: 720px){ 
+    .hide, nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+    .banner-image {
+        width: 100%;
+    }
+    article {
+        flex-direction: row;
+        width: 98%;
+        padding-bottom: 10px;
+    }
+    #articleleft {
+        display: flex;
+        flex-direction: column;
+    }
+    article img {
+        height: 200px;
+    }
+    .big {
+        display: inline-block;
+    }
+    .small {
+        display:none;
+    }
+    nav ul li a {
+        border: none;
+        padding: 0.4rem;
+        font-size: 1.4rem;
+}
+
+}
