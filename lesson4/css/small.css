@@ -1,3 +1,5 @@
+/*--------------MAIN STUFF-----------------*/
+
 p {
     font-family: 'Jost', sans-serif;
 }
@@ -14,7 +16,13 @@ main {
 header {
     padding-top: 10px;
     background-color: #6eb4d1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+/*#logobox {
+
+}*/
 .logo {
     float:left;
     width: 70px;
@@ -48,6 +56,8 @@ h2 {
     align-self: center;
     
 }
+
+/*---------------TILE------------------*/
 #tile1 {   
     margin-bottom: -190px;
     margin-left: 30px;
@@ -62,6 +72,7 @@ h2 {
 
 #tile1 ul li {
     font-family: 'Jost', sans-serif;
+    
 }
 
 .banner-image {
@@ -69,6 +80,8 @@ h2 {
     width: 95%;
     box-shadow: 0px 3px 5px gray;
 }
+
+/*------------ARTICLE---------------*/
 article {
     align-self: center;
     display: flex;
@@ -97,52 +110,67 @@ article img {
     align-self: center;
     padding: 10px;
 }
+
+/*-----NAV MENU ------*/
 nav {
     background-color: #6eb4d1;
-    margin-top: -5px;
+    font-family: 'Fredoka One', cursive;
 }
+
 nav ul {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     list-style-type: none;
     margin: 0;
 	padding: 0;
-	overflow: hidden;
 }
+nav button {
+    margin: 0;
+    background-color: transparent;    
+    text-align: center;
+    font-size: 1.6rem;
+    padding:6px;
+    border: none;
+    width: 100%;
+    color: black;
+
+}
+
+#dropdownbutton:hover {
+    background-color: #bbb;
+}
+
 nav ul li a {
 	display: block;
 	text-align: center;
-	padding: 0.4rem;
 	text-decoration: none;
-    font-size: 0.95rem;
-    font-family: 'Fredoka One', cursive; 
+    font-size: 1.6rem;
+    padding: 6px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
     color: black;
 }
-a:hover {
+nav ul li a:hover {
 	background-color: #bbb;
-    color: #36454f;
+    
 }
+
+
+/*--------------FOOTER-------------------*/
 footer {
     background-color: #6eb4d1;
     text-align: center;
     padding-bottom: 10px;
     padding-top: 5px;
 }
-#big {
+
+/*-----------RESPONSIVE--------------*/
+.big {
     display: none;
 }
-#small {
+.small {
     display: inline-block;
 }
-
-/*button {
-    background-color: #6eb4d1;
-    text-align: center;
-    font-size: 0.95rem;
-    font-family: 'Fredoka One', cursive; 
-    color: black;
-    border: none;
-    width: 100%;
-    height: 35px;
-}*/
+.hide {
+    display:none;
+}

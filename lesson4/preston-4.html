@@ -7,7 +7,8 @@
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/small.css">
         <link rel="stylesheet" type="text/css" href="css/large.css">
-        
+        <script src="js/script.js"></script>
+
         <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
         
@@ -16,12 +17,15 @@
     
 	<body>
         <header>
+            <div id="logobox">
                 <img class="logo" src="images/favicon.png" alt="sunstat.us logo">
                 <h1>Sunstat.us</h1>
                 <h5>Your Weather HQ</h5>
-            
+            </div>
             <nav>
-                <ul>
+                
+                <button id="dropdownbutton" type="button" class="small menu" onclick="toggleMenu()">&#9776; Menu</button>
+                <ul id="dropdown" class="">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">Preston</a></li>
                     <li><a href="#">Soda Springs</a></li>
@@ -67,8 +71,8 @@
 
         </main>
         <footer>
-            <span id="big"><p>Contact Us: 1 (800) 123-4567 | sunshine@sunstat.us </p></span>
-            <span id="small"><p>Contact Us: 1 (800) 123-4567</p><p>sunshine@sunstat.us </p></span>
+            <span class="big"><p>Contact Us: 1 (800) 123-4567 | sunshine@sunstat.us </p></span>
+            <span class="small"><p>Contact Us: 1 (800) 123-4567</p><p>sunshine@sunstat.us </p></span>
             <p>SITE MAP</p>
             <p>&copy; 2020 - Ethan Tindall | WDD 230 | <a href="#">Terms of Use</a> | Current Date</p>
         </footer>
