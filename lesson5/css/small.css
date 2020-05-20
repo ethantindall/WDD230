@@ -1,5 +1,12 @@
 /*--------------MAIN STUFF-----------------*/
-
+.picnic {
+    
+    background-color: #f7af9d;
+    color: black;
+    margin-top:-10px;
+    width: 100%;
+    text-align: center;
+}
 p {
     font-family: 'Jost', sans-serif;
 }
@@ -165,7 +172,8 @@ nav ul li a:hover {
 	background-color: #bbb;
 }
 nav ul .active {
-    background-color:rgb(129, 127, 127);
+    text-decoration: underline;
+
 
 
 }
