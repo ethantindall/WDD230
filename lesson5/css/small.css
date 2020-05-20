@@ -20,13 +20,23 @@ header {
     flex-direction: column;
     align-items: center;
 }
-/*#logobox {
-
-}*/
+#logobox {
+    display:flex;
+    flex-direction: row;
+}
+#company {
+    display:flex;
+    flex-direction: column;
+}
+#subtitle {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1em;
+    margin-top: -23px;
+}
 .logo {
-    float:left;
-    width: 70px;
-    padding: 0% 10px 0% 10px;
+    padding-top: 15px;
+    padding-right: 10px;
+    height: 70px;
 }
 
 h1 {
@@ -34,11 +44,7 @@ h1 {
     font-size: 2em;
 
 }
-#subtitle {
-    font-family: 'Fredoka One', cursive;
-    font-size: 1em;
-    margin-top: -23px;
-}
+
 h4 {
     font-family: 'Fredoka One', cursive;
 
@@ -63,7 +69,7 @@ h2 {
     position: absolute;
     top: 20px;
     left: 20px;
-    background-color: rgb(247, 175, 157);
+    background-color: rgba(247, 175, 157, .8);
     border: 1px solid black;
     max-width: 190px;
 
@@ -80,6 +86,7 @@ h2 {
 .banner-image {    
     width: 100%;
     box-shadow: 0px 3px 5px gray;
+    margin-bottom: 10px;
 }
 
 /*------------ARTICLE---------------*/
@@ -90,7 +97,8 @@ article {
     background-color: #f7af9d;
     width: 95%;
     border: 1px solid black;
-    margin: 0px;
+    margin-top: 3rem;
+    margin-bottom: 10px;
     
 }
 article p {
@@ -127,6 +135,7 @@ nav ul {
 	padding: 0;
 }
 nav button {
+    display:block;
     margin: 0;
     background-color: transparent;    
     text-align: center;
@@ -143,7 +152,8 @@ nav button {
 }
 
 nav ul li a {
-	display: block;
+    display: block;
+
 	text-align: center;
 	text-decoration: none;
     font-size: 1.6rem;
@@ -153,7 +163,11 @@ nav ul li a {
 }
 nav ul li a:hover {
 	background-color: #bbb;
-    
+}
+nav ul .active {
+    background-color:rgb(129, 127, 127);
+
+
 }
 
 

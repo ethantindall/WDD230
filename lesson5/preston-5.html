@@ -21,15 +21,17 @@
         <header>
             <div id="logobox">
                 <img class="logo" src="images/android-chrome-512x512.png" alt="sunstat.us logo">
-                <h1>Sunstat.us</h1>
-                <p id="subtitle">Your Weather HQ</p>
+                <div id="company">
+                    <h1>Sunstat.us</h1>
+                    <p id="subtitle">Your Weather HQ</p>
+                </div>
             </div>
             <nav>
                 
                 <button id="dropdownbutton" type="button" class="small menu" onclick="toggleMenu()">&#9776; Menu</button>
-                <ul id="dropdown" class="">
+                <ul id="dropdown" class="hide">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Preston</a></li>
+                    <li class="active"><a href="#">Preston</a></li>
                     <li><a href="#">Soda Springs</a></li>
                     <li><a href="#">Fish Haven</a></li>
                     <li><a href="#">Storm Center</a></li>
@@ -52,7 +54,20 @@
                     </ul>
                 </div>
             </div>
-            <div class="big forecast">Filler</div>
+            <div class="big forecast">
+                <h3>5 Day Forecast</h3>
+                <p>Monday</p>
+                <img src="images/weather/cloudy192.png" alt="cloudy">
+                <p>Tuesday</p>
+                <img src="images/weather/snow192.png" alt="snowy">
+                <p>Wednesday</p>
+                <img src="images/weather/sun192.png" alt="sunny">
+                <p>Thursday</p>
+                <img src="images/weather/thunderstorm192.png" alt="thunderstorm">
+                <p>Friday</p>
+                <img src="images/weather/partlycloudy192.png">
+                
+            </div>
 
             <article>
                 <div id="articleleft">
