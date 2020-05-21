@@ -1,6 +1,6 @@
 /*--------------MAIN STUFF-----------------*/
 .picnic {
-    
+    display: block;
     background-color: #f7af9d;
     color: black;
     margin-top:-10px;
