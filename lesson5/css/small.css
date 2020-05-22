@@ -131,6 +131,7 @@ article img {
 nav {
     background-color: #6eb4d1;
     font-family: 'Fredoka One', cursive;
+    margin: 0 auto;
 }
 
 nav ul {
