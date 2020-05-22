@@ -11,10 +11,14 @@ window.onload = function time() {
     var monthofyear = months[date.getMonth()];    
     var fulldate = dayofweek + ", " + date.getDate() + " " + monthofyear + " " + date.getFullYear();
     document.getElementById("datetime").innerHTML = fulldate;
-}
-window.onload = function picnic() {
-    if (dayofweek != "Friday") {
-        var ok = document.getElementsByClassName("picnic");
-        ok.style.display = "none";
+    
+    /*------------------------------*/
+    
+    const banner = document.getElementById('picnic');
+    if(date.getDay() == 5){
+        banner.style.display = 'block';
     }
+    else{
+        banner.style.display = 'none';
+}
 }
