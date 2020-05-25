@@ -1,0 +1,12 @@
+@media (min-width: 960px){
+    article {
+        width:100%;
+        margin-bottom: 50px;
+    }
+    article img {
+        height: 300px;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: -30px;
+    }
+}
