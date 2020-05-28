@@ -2,15 +2,7 @@ function toggleMenu() {
     document.getElementById("dropdown").classList.toggle("hide");
 }
 
-WebFont.load({
-    google: {
-      families: [
-         'Fredoka One', 'Jost'
-      ]
-    }
-  });
-
-window.onload = function time() {
+function time() {
 
     var days = ["Sunday", "Monday", "Tuesday", "Wedneday", "Thursday", "Friday", "Saturday"]
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -30,3 +22,13 @@ window.onload = function time() {
         banner.style.display = 'none';
 }
 }
+
+window.addEventListener("load", time())
+
+WebFont.load({
+  google: {
+    families: [
+       'Fredoka One', 'Jost'
+    ]
+  }
+});

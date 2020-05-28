@@ -9,10 +9,7 @@
         <link rel="stylesheet" type="text/css" href="css/small.css">
         <link rel="stylesheet" type="text/css" href="css/medium.css">
         <link rel="stylesheet" type="text/css" href="css/large.css">
-        <script src="js/script.js"></script>
-
-
-        
+    
 		<title>Sunstat.us | Your Weather HQ</title>
     </head>
     
@@ -56,11 +53,10 @@
                 <div id="tile1">
                     <h3>Weather Summary</h3>
                     <ul>
-                        <li>Temp: 80 degrees</li>
-                        <li>Sky: Sunny</li>
+                        <li>Temp: <span id="temp"></span>&#176;</li>
                         <li>Chance of Rain: 10%</li>
-                        <li>Wind Speed: 5mi</li>
-                        <li>Humidity: 30%</li>
+                        <li>Wind Speed: <span id="speed"></span>&#176;</li>
+                        <li>Wind Chill: <span id="chill"></span>&#176;</li>
                     </ul>
                 </div>
             </div>
@@ -108,5 +104,7 @@
 
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/windchill.js"></script>
     </body>
     </html>
