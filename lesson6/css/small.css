@@ -184,6 +184,9 @@ footer {
     padding-bottom: 10px;
     padding-top: 5px;
 }
+footer a {
+    color: black;
+}
 
 /*-----------RESPONSIVE--------------*/
 .big {
