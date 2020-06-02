@@ -56,5 +56,8 @@
     width:60px;
     margin-top:-15px;
 }
-
+/*-------------GALLERY----------------------*/
+.gallery {
+    grid-template-columns: 1fr 1fr;
+}
 }

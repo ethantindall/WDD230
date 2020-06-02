@@ -198,3 +198,20 @@ footer a {
 .hide {
     display:none;
 }
+
+/*-------------GALLERY----------------------*/
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.gallery img {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.gallery picture {
+    border: solid black 2px;
+    margin: 10px;
+    padding: 0px;
+}
