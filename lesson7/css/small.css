@@ -206,8 +206,8 @@ footer a {
     justify-items: center;
 }
 .gallery img {
-    max-width: 275px;
-    max-height: 200px;
+    max-width: 250px;
+    max-height: 175px;
     margin: 0px;
     margin-right: -10px;
     padding: 0px;
@@ -218,7 +218,7 @@ footer a {
     border: solid black 2px;
     margin: 10px;
     padding: 0px;
-    width: 275px;
+    width: 250px;
     background-color:#6eb4d1;
 }
 .gallery img[data-src] {
