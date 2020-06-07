@@ -1,0 +1,40 @@
+body {
+    margin: 100px auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+table {
+    margin-left: 40%;
+    text-align: center;
+    background-color: gainsboro;
+    border-collapse: collapse;
+    border: 2px solid lightgray;
+}
+td {
+    padding: .3em 1.2em;
+    border: 2px solid lightgray;
+
+}
+thead tr td:first-child {
+    background-color: #7fb9c2;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+#exceeded {
+    color: white;
+    background-color: #628ca6;
+}
+tr th {
+    background-color: #628ca6;
+    color: white;
+    padding: 5px 0px;
+    border: 2px solid lightgray;
+}
+tfoot {
+    background-color: #7fb9c2;
+    font-size: 0.7em;
+}
+tfoot tr td {
+    padding: 10px
+}
