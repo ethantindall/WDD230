@@ -1,9 +1,10 @@
+//Dropdown Menu
 function toggleMenu() {
     document.getElementById("dropdown").classList.toggle("hide");
 }
 
+//Shows last updated
 function time() {
-
     var days = ["Sunday", "Monday", "Tuesday", "Wedneday", "Thursday", "Friday", "Saturday"]
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     var date = new Date();
@@ -13,7 +14,7 @@ function time() {
     document.getElementById("datetime").innerHTML = fulldate;
     
     /*------------------------------*/
-    
+    //Shows banner if it's friday
     const banner = document.getElementById('picnic');
     if(date.getDay() == 5){
         banner.style.display = 'block';
@@ -23,8 +24,11 @@ function time() {
 }
 }
 
+//Loads date and time
 window.addEventListener("load", time())
 
+
+//Loads Font
 WebFont.load({
   google: {
     families: [
@@ -32,3 +36,8 @@ WebFont.load({
     ]
   }
 });
+
+//Updates slider
+function adjustRating(rating) {
+  document.getElementById("ratingvalue").innerHTML = rating;
+}
