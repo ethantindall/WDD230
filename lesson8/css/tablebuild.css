@@ -19,7 +19,6 @@ thead tr td:first-child {
     color: black;
     font-size: 1.5em;
     font-weight: bold;
-
 }
 #exceeded {
     color: white;
@@ -37,4 +36,10 @@ tfoot {
 }
 tfoot tr td {
     padding: 10px
+}
+tbody tr:first-child, tbody tr:nth-child(3), tbody tr:nth-child(5) {
+    background-color: #e7f0ed;
+}
+tbody tr:nth-child(2), tbody tr:nth-child(4), tbody tr:nth-child(6) {
+    background-color: #e7ffed;
 }
