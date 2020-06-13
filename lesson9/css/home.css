@@ -45,7 +45,7 @@ section h4 {
         width: 600px;
         height: 245px;
         display: flex;
-        flex: row wrap;
+        flex-direction: row;
         padding-top: 0px;
     }
     section div {
