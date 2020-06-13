@@ -205,6 +205,9 @@ footer a {
     grid-template-columns: 1fr;
     justify-items: center;
 }
+.gallery span {
+    font-family: 'Jost', sans-serif;
+}
 .gallery img {
     max-width: 250px;
     max-height: 175px;
