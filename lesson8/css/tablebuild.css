@@ -8,6 +8,7 @@ table {
     background-color: gainsboro;
     border-collapse: collapse;
     border: 2px solid lightgray;
+    box-shadow: 5px 5px 8px lightgray;
 }
 td {
     padding: .3em 1.2em;
