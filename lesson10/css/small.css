@@ -305,9 +305,15 @@ form label.top input:required {
 form label.top input:required:valid {
     border-left: green solid 6px;
 }  
-
 .forecast section {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    align-items: center;
+}
+.forecast section span {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.4rem;
+}
+.forecast section img {
+    padding-top: 10px;
 }

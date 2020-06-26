@@ -37,8 +37,8 @@ fetch(apiURL2)
         img.setAttribute('alt', forecast.list[item].weather[0].main);
         card.appendChild(img);
 
-        let tt = document.createElement('p');
-        tt.textContent = forecast.list[item].main.temp.toFixed(1) +" F";
+        let tt = document.createElement('span');
+        tt.textContent = forecast.list[item].main.temp.toFixed(1) + " °F";
         card.appendChild(tt);
 
         document.querySelector('div.forecast').appendChild(card);        
