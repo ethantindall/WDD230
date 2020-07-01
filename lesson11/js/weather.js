@@ -15,7 +15,17 @@ fetch(apiURL)
     }
   });
   
-const apiURL2 ="https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=d7ffb76f27d5f75f6ce4b7817252176f";
+
+var x = document.getElementById("pagetitle").textContent;
+var apiURL2 = "";
+if (x == "Preston") {
+  apiURL2 ="https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=d7ffb76f27d5f75f6ce4b7817252176f";
+} else if (x == "Fish Haven") {
+  apiURL2 ="https://api.openweathermap.org/data/2.5/forecast?zip=83287,us&units=imperial&appid=d7ffb76f27d5f75f6ce4b7817252176f";
+}else if (x == "Soda Springs") {
+  apiURL2 ="https://api.openweathermap.org/data/2.5/forecast?zip=83276,us&units=imperial&appid=d7ffb76f27d5f75f6ce4b7817252176f";
+}
+
 fetch(apiURL2)
   .then((response) => response.json())
   .then((forecast) => {
