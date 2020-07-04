@@ -1,4 +1,14 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=d7ffb76f27d5f75f6ce4b7817252176f";
+var x = document.getElementById("pagetitle").textContent;
+var apiURL = "";
+if (x == "Preston") {
+  apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=d7ffb76f27d5f75f6ce4b7817252176f";
+} else if (x == "Fish Haven") {
+  apiURL ="https://api.openweathermap.org/data/2.5/weather?zip=83287,us&units=imperial&appid=d7ffb76f27d5f75f6ce4b7817252176f";
+}else if (x == "Soda Springs") {
+  apiURL ="https://api.openweathermap.org/data/2.5/weather?zip=83276,us&units=imperial&appid=d7ffb76f27d5f75f6ce4b7817252176f";
+}
+
+
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -16,7 +26,6 @@ fetch(apiURL)
   });
   
 
-var x = document.getElementById("pagetitle").textContent;
 var apiURL2 = "";
 if (x == "Preston") {
   apiURL2 ="https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=d7ffb76f27d5f75f6ce4b7817252176f";
@@ -31,7 +40,6 @@ fetch(apiURL2)
   .then((forecast) => {
     for (const item in forecast.list) {
       if (forecast.list[item].dt_txt.includes("18:00")) {
-        console.log(forecast.list[item]);
         var date = new Date(forecast.list[item].dt_txt);
         var day = date.toString();
         day = day.slice(0,3)
@@ -56,6 +64,29 @@ fetch(apiURL2)
 
     }
   });
-  
-  
 
+
+
+let url="https://byui-cit230.github.io/weather/data/towndata.json"
+
+fetch(url)
+.then((Response) => Response.json())
+.then((jsObject) => {
+  console.log(jsObject);
+  const events = document.querySelector('.townevent');
+  let towns = jsObject['towns'];
+  towns.forEach(town => {
+    if (town.name == x){
+      let h2 = document.createElement('h2');
+      let ul = document.createElement('ul');
+      h2.textContent = 'Events in ' + town.name;
+      events.appendChild(h2);
+      town.events.forEach(event => {
+        let li = document.createElement('li');
+        li.textContent = event;
+        ul.appendChild(li);
+      });
+      events.appendChild(ul);
+    }
+  });
+});

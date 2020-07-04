@@ -187,7 +187,9 @@ footer {
 footer a {
     color: black;
 }
-
+footer img {
+    max-width: 200px;
+}
 /*-----------RESPONSIVE--------------*/
 .big {
     display: none;
@@ -316,4 +318,19 @@ form label.top input:required:valid {
 }
 .forecast section img {
     padding-top: 10px;
+}
+
+/*-----Events---------*/
+.townevent {
+    display: flex;
+    flex-direction: column;
+}
+.townevent h2 {
+    align-self: start;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.townevent ul {
+    font-family: 'Jost', sans-serif;
+    margin-top: 0px;
 }
