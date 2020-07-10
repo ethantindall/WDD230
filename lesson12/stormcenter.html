@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content = "Sunstat.us Storm Center">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    
+		<title>Sunstat.us | Your Weather HQ</title>
+    </head>
+    
+	<body>
+        <header>
+            <div id="picnic">
+                <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+            </div>
+            <div id="logobox">
+                <img class="logo" src="images/android-chrome-512x512.png" alt="sunstat.us logo">
+                <div id="company">
+                    <h1>Sunstat.us</h1>
+                    <p id="subtitle">Your Weather HQ</p>
+                </div>
+            </div>
+            <nav>
+                
+                <button id="dropdownbutton" type="button" class="small menu" onclick="toggleMenu()">&#9776; Menu</button>
+                <ul id="dropdown" class="hide">
+                    <li><a href="index.html">Home</a></li>
+                    <li ><a href="preston.html">Preston</a></li>
+                    <li><a href="sodasprings.html">Soda Springs</a></li>
+                    <li><a href="fishhaven.html">Fish Haven</a></li>
+                    <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Storm Center: Report A Storm</h2>
+            <form method="get" action="thanks.html">
+            <fieldset>
+            <legend>Personal Information</legend>
+                <label class="top" for="name">Full Name*:
+                    <input type="text" name="name" id="name" required></label>
+                <label class="top" for="email">Email*:
+                    <input type="email" name="email" id="email" placeholder="youremail@email.com" required></label>
+                <label class="top" for="phone">Phone Number*:
+                    <input type="tel" name="phone" id="phone" placeholder="800-555-5555" required></label>
+                <label class="top" for="zip">ZIP Code:
+                    <input type="text" name="zip" id="zip"></label>
+            </fieldset>
+            <fieldset>
+            <legend>Storm Information:</legend>
+                <label class="top" for="date">Storm Date:
+                    <input type="date" name="date" id="date"></label>
+                <label class="top" for="stormtype">Storm Type:
+                    <input type="text" name="type" id="stormtype" list="storms"></label>
+                    <datalist id="storms">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                <label class="top" for="severity">Storm Severity: <span id="ratingvalue">5</span></label>
+
+                    <input name="severity" id="severity" type="range" value="5" min="1" max="10" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <label class="top" for="region">Storm Region:
+                    <select name="region" id="region">
+                        <option value="">Select Region &#9662;</option>
+                        <option value="preston">Preston</option>
+                        <option value="soda-springs">Soda Springs</option>
+                        <option value="fish-haven">Fish Haven</option>
+                    </select></label>
+
+                <div class="sbs danger"><label id="dtitle">Danger?</label>
+                    <label><input name="danger" type="radio" value="yes">Yes</label>
+                    <label><input name="danger" type="radio" value="maybe">Maybe</label>
+                    <label><input name="danger" type="radio" value="no">No</label>
+                </div>
+                <label class="top" for="info">Additional Information:</label>
+                    <textarea name="info" id="info"></textarea>
+            </fieldset>
+            <button type="submit" value="Report Storm">Report Storm</button>
+
+            </form>
+
+        </main>
+        <footer>
+            <p class="big">Contact Us: 1 (800) 123-4567 | sunshine@sunstat.us </p>
+            <p class="small">Contact Us: 1 (800) 123-4567</p>
+            <p class="small">sunshine@sunstat.us </p>
+            <p id="datetime"></p>
+            <p>&copy; 2020 - Ethan Tindall | WDD 230 | <a href="#">Terms of Use</a></p>
+
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/script.js"></script>
+
+    </body>
+    </html>

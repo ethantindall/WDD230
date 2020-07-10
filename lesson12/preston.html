@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content = "Sunstat.us Preston Page">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    
+		<title>Sunstat.us | Preston</title>
+    </head>
+    
+	<body>
+        <header>
+            <div id="picnic">
+                <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+            </div>
+            <div id="logobox">
+                <img class="logo" src="images/android-chrome-512x512.png" alt="sunstat.us logo">
+                <div id="company">
+                    <h1>Sunstat.us</h1>
+                    <p id="subtitle">Your Weather HQ</p>
+                </div>
+            </div>
+            <nav>
+                
+                <button id="dropdownbutton" type="button" class="small menu" onclick="toggleMenu()">&#9776; Menu</button>
+                <ul id="dropdown" class="hide">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="preston.html">Preston</a></li>
+                    <li><a href="sodasprings.html">Soda Springs</a></li>
+                    <li><a href="fishhaven.html">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2 id="pagetitle">Preston</h2>
+            <div class="banner">
+                
+                <picture>
+                    <img src="images/franklin500.png" alt="banner" sizes="100vw"
+                            srcset="images/franklin500.png 500w,
+                                images/franklin720.png 720w,
+                                images/franklin960.png 960w">
+                </picture>
+
+                
+                <div id="tile1">
+                    <h3>Weather Summary</h3>
+                    <ul>
+                        <li>Temp: <span id="current-temp"></span> &#176;F</li>
+                        <li>Humidity: <span id="humid"></span>%</li>
+                        <li>Wind Speed: <span id="wind"></span></li>
+                        <li>Wind Chill: <span id="chill"></span> &#176;F</li>
+                        <li>Currently: <span id="desc"></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="big forecast">
+                <h3>5 Day Forecast</h3>
+                
+            </div>
+
+            <article>
+                <div id="articleleft">
+                <h3>
+                    About Preston
+                </h3>
+                <h4>By Ethan Tindall</h4>
+                <p>Preston, Preston, Preston. I don't know much about Preston. Nobody does really, it's a mysterious village in the middle of the
+                    Idaho wilderness. Rumor has it that the citizens spend their days training in Rex-kwon-do and watching MTV. Once, my cousin Denny 
+                    visited Preston and he said they had great hamburgers though. Besides that the only thing in town worth mentioning is the thrift shop.
+                    You can get all sorts of cool stuff there. He found some cool slightly used ninja equipment. On an unrelated note, I think I'm going to 
+                    watch Napoleon Dynamite tonight.
+                </p>
+                </div>
+                <img src="images/prestonsign.jpg" alt="Preston Welcome Sign">
+
+            </article>
+            <article class="townevent"></article>
+
+
+        </main>
+        <footer>
+            <p class="big">Contact Us: 1 (800) 123-4567 | sunshine@sunstat.us </p>
+            <p class="small">Contact Us: 1 (800) 123-4567</p>
+            <p class="small">sunshine@sunstat.us </p>
+            <p id="datetime"></p>
+            <img src="images/maps-preston.JPG" alt="Preston Map">
+            <p>&copy; 2020 - Ethan Tindall | WDD 230 | <a href="#">Terms of Use</a></p>
+
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/weather.js"></script>
+    </body>
+    </html>

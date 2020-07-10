@@ -1,0 +1,17 @@
+
+    article {
+        width:100%;
+        margin-bottom: 50px;
+    }
+    article img {
+        height: 300px;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: -30px;
+    }
+    /*-------------GALLERY----------------------*/
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+}
+.gallery picture:hover {
+    box-shadow: 0 0 25px #333;}
