@@ -1,0 +1,145 @@
+body {
+    margin: 0 auto;
+    max-width: 960px;
+    background-image: url("../images/jungle.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+main {
+    background-color: lightblue;
+}
+h1, h2, h3 {
+    font-family: $headerFont;
+}
+body p {
+    font-family: $textFont;
+    font-size: large;
+}
+header, footer {
+    background-color: #6eb4d1;
+}
+header {
+    text-align: center;
+    h1 {
+        font-size: 4rem;
+        padding: 0;
+        padding-top: 25px;
+        margin: 0;
+    }
+    h2 {
+        font-size: 1.3rem;
+        padding: 0;
+        padding-bottom: 25px;
+        margin: 0;
+    }
+}
+
+section div img {
+    height: 176px;
+}
+section {
+    margin-left: 20px;
+}
+
+.arrow {
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-top: 88px solid transparent;
+    border-bottom: 88px solid transparent;   
+    border-left:  170px solid green;
+}
+.cards {
+    div {
+        padding: 0;
+        margin-top: 0px;
+        height: 176px;
+    }
+    #jeeps {margin-bottom: 100px;}
+    
+    div:hover {
+        margin-left: 200px;
+        transition: .5s;
+    }
+    div h3 {
+        position: relative;
+        top: 143px;
+        left: 200px;
+        font-size: 2rem;
+        color: white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+    }
+    div img {
+        margin: 0;
+        padding: 0;
+        box-shadow: 6px 6px 8px #000;
+
+    }
+}
+article {
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+
+
+/*---------------------FOOTER----------------------------*/
+footer {
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+
+/*-----NAV MENU ------*/
+nav {
+    background-color: #6eb4d1;
+    font-family: $textFont;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav button {
+    display:block;
+    margin: 0;
+    background-color: transparent;    
+    text-align: center;
+    font-size: 1.6rem;
+    padding:6px;
+    border: none;
+    width: 100%;
+    color: black;
+
+}
+
+#dropdownbutton:hover {
+    background-color: #bbb;
+}
+
+nav ul li a {
+    display: block;
+
+	text-align: center;
+	text-decoration: none;
+    font-size: 1.6rem;
+    padding: 6px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    color: black;
+}
+nav ul li a:hover {
+	background-color: #bbb;
+}
+nav ul .active {
+    text-decoration: underline;
+}
+.hide {
+    display: none;
+}
