@@ -305,13 +305,14 @@ template {
 
 body {
   margin: 0 auto;
-  max-width: 960px;
-  background-image: url("../images/jungle.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
+  max-width: 1000px;
+  background-color: #009b72; }
 
 main {
   background-color: lightblue; }
+
+#hero {
+  width: 100%; }
 
 h1, h2, h3 {
   font-family: "Galada", cursive; }
@@ -321,7 +322,7 @@ body p {
   font-size: large; }
 
 header, footer {
-  background-color: #6eb4d1; }
+  background-color: #009DDC; }
 
 header {
   text-align: center; }
@@ -348,7 +349,7 @@ section {
   height: 0;
   border-top: 88px solid transparent;
   border-bottom: 88px solid transparent;
-  border-left: 170px solid green; }
+  border-left: 170px solid #ff4f79; }
 
 .cards div {
   padding: 0;
@@ -356,6 +357,8 @@ section {
   height: 176px; }
 .cards #jeeps {
   margin-bottom: 100px; }
+.cards #atv {
+  margin-top: -75px; }
 .cards div:hover {
   margin-left: 200px;
   transition: .5s; }
@@ -382,7 +385,7 @@ footer {
 
 /*-----NAV MENU ------*/
 nav {
-  background-color: #6eb4d1;
+  background-color: #ff4f79;
   font-family: "Open Sans Condensed", sans-serif;
   margin: 0 auto; }
 
