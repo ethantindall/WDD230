@@ -305,14 +305,23 @@ template {
 
 body {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 960px;
   background-color: #009b72; }
+
+#bg {
+  background-image: url("../images/jungle.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 300px;
+  margin-bottom: -50px; }
 
 main {
   background-color: lightblue; }
 
-#hero {
-  width: 100%; }
+.check {
+  font-size: 2rem;
+  padding-top: 30px; }
 
 h1, h2, h3 {
   font-family: "Galada", cursive; }
@@ -322,7 +331,7 @@ body p {
   font-size: large; }
 
 header, footer {
-  background-color: #02abed; }
+  background-color: limegreen; }
 
 header {
   text-align: center; }
@@ -338,34 +347,27 @@ header {
     margin: 0; }
 
 section div img {
-  height: 176px; }
+  max-width: 95%; }
 
 section {
   margin-left: 20px; }
 
 .arrow {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-top: 88px solid transparent;
-  border-bottom: 88px solid transparent;
-  border-left: 170px solid #e8436b; }
+  display: none; }
 
-.cards div {
-  padding: 0;
-  margin-top: 0px;
-  height: 176px; }
 .cards #jeeps {
-  margin-bottom: 100px; }
+  margin-bottom: -30px; }
 .cards #atv {
-  margin-top: -75px; }
-.cards div:hover {
-  margin-left: 200px;
-  transition: .5s; }
+  margin-top: -75px;
+  margin-bottom: -80px; }
+.cards #scooters {
+  margin-bottom: -80px; }
+.cards div {
+  margin-top: 0px; }
 .cards div h3 {
   position: relative;
-  top: 143px;
-  left: 200px;
+  top: 130px;
+  left: 15%;
   font-size: 2rem;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
@@ -375,7 +377,7 @@ section {
   box-shadow: 6px 6px 8px #000; }
 
 article {
-  margin-left: 20px;
+  margin: 0 20px;
   padding-bottom: 10px; }
 
 /*---------------------FOOTER----------------------------*/
@@ -385,7 +387,7 @@ footer {
 
 /*-----NAV MENU ------*/
 nav {
-  background-color: #e8436b;
+  background-color: #009b72;
   font-family: "Open Sans Condensed", sans-serif;
   margin: 0 auto; }
 
@@ -429,7 +431,7 @@ nav ul .active {
 .hide {
   display: none; }
 
-@media (min-width: 960px) {
+@media (min-width: 720px) {
   .hide, nav ul {
     display: flex;
     flex-direction: row; }
@@ -438,4 +440,51 @@ nav ul .active {
     border-top: none; }
 
   #dropdownbutton {
-    display: none; } }
+    display: none; }
+
+  section div img {
+    height: 176px; }
+
+  .cards div:hover {
+    margin-left: 100px;
+    transition: .5s; }
+  .cards div h3 {
+    position: relative;
+    top: 143px;
+    left: 200px;
+    font-size: 2rem;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+  .cards #jeeps {
+    margin-bottom: 80px; }
+  .cards #atv {
+    margin-top: -70px;
+    margin-bottom: 0px; }
+  .cards #scooters {
+    margin-bottom: 0px; }
+  .cards div {
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    height: 176px;
+    margin-left: 5px;
+    width: 95%; }
+
+  .arrow {
+    display: inline-block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 88px solid transparent;
+    border-bottom: 88px solid transparent;
+    border-left: 170px solid #009b72; }
+
+  #bg {
+    height: 400px; } }
+@media (min-width: 960px) {
+  .cards div:hover {
+    margin-left: 320px;
+    transition: .5s; }
+
+  #bg {
+    height: 500px; } }

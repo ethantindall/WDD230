@@ -1,10 +1,7 @@
-.hide, nav ul {
-    display: flex;
-    flex-direction: row;}
-
-nav ul li a {
-    border-top: none;
+.cards div:hover {
+    margin-left: 320px;
+    transition: .5s;
 }
-#dropdownbutton {
-    display: none;
+#bg {
+    height: 500px;
 }

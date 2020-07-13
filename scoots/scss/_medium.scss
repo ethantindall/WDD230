@@ -1,0 +1,63 @@
+
+.hide, nav ul {
+    display: flex;
+    flex-direction: row;}
+
+nav ul li a {
+    border-top: none;
+}
+#dropdownbutton {
+    display: none;
+}
+section div img {
+    height: 176px;
+
+}
+
+.cards {
+
+    div:hover {
+    margin-left: 100px;
+    transition: .5s;
+    }
+    div h3 {
+        position: relative;
+        top: 143px;
+        left: 200px;
+        font-size: 2rem;
+        color: white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+    }
+    #jeeps {
+        margin-bottom: 80px;
+    }
+    #atv {
+        margin-top: -70px;
+        margin-bottom: 0px;
+    }
+    #scooters {
+        margin-bottom: 0px;
+    }
+    div {
+        padding: 0;
+        margin-top: 0px;
+        margin-bottom: 40px;
+
+        height: 176px;
+        margin-left: 5px;
+        width: 95%;
+    }
+}
+.arrow {
+    display: inline-block;
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-top: 88px solid transparent;
+    border-bottom: 88px solid transparent;   
+    border-left:  170px solid $accent1;}
+    
+#bg {
+    height: 400px;
+}
