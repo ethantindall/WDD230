@@ -349,7 +349,7 @@ section {
   height: 0;
   border-top: 88px solid transparent;
   border-bottom: 88px solid transparent;
-  border-left: 170px solid #ff4f79; }
+  border-left: 170px solid #e8436b; }
 
 .cards div {
   padding: 0;
@@ -385,7 +385,7 @@ footer {
 
 /*-----NAV MENU ------*/
 nav {
-  background-color: #ff4f79;
+  background-color: #e8436b;
   font-family: "Open Sans Condensed", sans-serif;
   margin: 0 auto; }
 
