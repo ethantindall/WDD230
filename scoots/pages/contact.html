@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content = "Scoots Rentals Home Page">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Galada&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <header>
+            <h1>Scoots Rentals</h1>
+            <h2>Your Vacation Vehicle Headquarters</h2>
+
+            <div id="menu">
+                <nav>
+                
+                    <button id="dropdownbutton" type="button" class="small menu" onclick="toggleMenu()">&#9776; Menu</button>
+                    <ul id="dropdown" class="hide">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="rentals.html">Rentals</a></li>
+                        <li class="active"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="bg"></div>
+        </header>
+
+        <main>
+            <h3>Contact Us</h3>
+            <form method="get" action="thanks.html">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                    <label class="top" for="name">Full Name*:
+                        <input type="text" name="name" id="name" required></label>
+                    <label class="top" for="email" minlength="5">Email*:
+                        <input type="email" name="email" id="email" placeholder="youremail@email.com" required></label>
+                    <label class="top" for="phone" minlength="7">Phone Number*:
+                        <input type="tel" name="phone" id="phone" placeholder="800-555-5555" required></label>
+                    <label class="top" for="info">Message:</label>
+                        <textarea name="msg" id="msg"></textarea>
+                </fieldset>
+                <button type="submit" value="Contact Us">Contact Us</button>
+                </form>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12169.767561565663!2d-111.7256936!3d40.31034945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d84d07bde848d%3A0x83dc3c79ccd20993!2sCulver&#39;s!5e0!3m2!1sen!2sus!4v1594756083570!5m2!1sen!2sus" width="300" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </main>
+
+        <footer>
+            <p>Contact Us: 1 (800) 123-4567 | scoots@scoots.com </p>
+            <p id="datetime"></p>
+            <p>&copy; 2020 - Ethan Tindall | WDD 230 | <a href="#">Terms of Use</a></p>
+            <p id="p2">Last Updated: <span id="timedisp"></span></p>
+
+        </footer>
+		<script src="../js/scoots.js"></script>
+    </body>
+    
+</html>

@@ -36,7 +36,6 @@ function last() {
     document.getElementById("timedisp").textContent = (date.getMonth() + 1) + "/" + (date.getDate()) 
         + "/" + date.getFullYear() + "  " + hours + ":" + minutes + ":" + seconds;
 
-    document.getElementById("currentyear").textContent = (date.getFullYear());
 }
 //Loads date and time
-window.addEventListener("load", last())
+window.addEventListener("load", last());

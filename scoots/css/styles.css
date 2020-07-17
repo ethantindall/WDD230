@@ -309,7 +309,7 @@ body {
   background-color: #009b72; }
 
 #bg {
-  background-image: url("../images/jungle.jpg");
+  background-image: url("../images/cozumel.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -431,6 +431,28 @@ nav ul .active {
 .hide {
   display: none; }
 
+/*--------THANKS---------*/
+#thanks {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 40px;
+  margin: 0; }
+
+/*-----------TABLE--------------*/
+table {
+  text-align: center;
+  border-collapse: collapse;
+  margin: 0 5%;
+  margin-bottom: 15px; }
+
+td {
+  padding: .3rem;
+  border: 1px solid black; }
+
+iframe {
+  margin: 0 50%;
+  margin-left: 50px; }
+
 @media (min-width: 720px) {
   .hide, nav ul {
     display: flex;
@@ -480,11 +502,25 @@ nav ul .active {
     border-left: 170px solid #009b72; }
 
   #bg {
-    height: 400px; } }
+    height: 400px; }
+
+  /*--------THANKS---------*/
+  #thanks {
+    text-align: center;
+    font-size: 6rem;
+    padding-top: 40px;
+    margin: 0; } }
 @media (min-width: 960px) {
   .cards div:hover {
     margin-left: 320px;
     transition: .5s; }
 
   #bg {
-    height: 500px; } }
+    height: 500px; }
+
+  /*--------THANKS---------*/
+  #thanks {
+    text-align: center;
+    font-size: 10rem;
+    padding-top: 40px;
+    margin: 0; } }
