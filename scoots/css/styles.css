@@ -364,7 +364,7 @@ section div img {
   margin-top: 0px; }
 .cards div h3 {
   position: relative;
-  top: 130px;
+  top: 120px;
   left: 15%;
   font-size: 2rem;
   color: white;
@@ -451,8 +451,7 @@ td {
   border: 1px solid black; }
 
 iframe {
-  margin: 0 50%;
-  margin-left: 50px; }
+  margin: 0px 50% 0px 10px; }
 
 /*---------------FORM----------*/
 fieldset {
@@ -469,7 +468,10 @@ fieldset textarea {
   height: 100px; }
 
 form button {
-  font-family: "Galada", cursive; }
+  font-size: 1.5rem;
+  font-family: "Galada", cursive;
+  padding: 10px 10px 6px 8px;
+  margin: 20px; }
 
 @media (min-width: 720px) {
   .hide, nav ul {
