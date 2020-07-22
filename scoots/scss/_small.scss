@@ -198,3 +198,14 @@ form button {
     padding: 10px 10px 6px 8px;
     margin: 20px;
 }
+
+/*--------WEATHER----------*/
+.forecast {
+    display: none;
+}
+h4 {
+    font-family: $headerFont;
+    font-size: 1.4rem;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}

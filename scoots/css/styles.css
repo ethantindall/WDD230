@@ -473,6 +473,16 @@ form button {
   padding: 10px 10px 6px 8px;
   margin: 20px; }
 
+/*--------WEATHER----------*/
+.forecast {
+  display: none; }
+
+h4 {
+  font-family: "Galada", cursive;
+  font-size: 1.4rem;
+  padding-left: 20px;
+  margin-bottom: 5px; }
+
 @media (min-width: 720px) {
   .hide, nav ul {
     display: flex;
@@ -536,7 +546,26 @@ form button {
     width: 30%; }
 
   fieldset textarea {
-    max-width: 40%; } }
+    max-width: 40%; }
+
+  /*--------WEATHER----------*/
+  .forecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: limegreen;
+    padding-bottom: 15px; }
+    .forecast h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0; }
+    .forecast img {
+      margin: 0px; }
+    .forecast section {
+      display: flex;
+      flex-direction: column; }
+      .forecast section span {
+        font-family: "Open Sans Condensed", sans-serif;
+        font-size: 1.4rem; } }
 @media (min-width: 960px) {
   .cards div:hover {
     margin-left: 320px;
