@@ -14,7 +14,7 @@ fetch(requestURL)
       let col0 = document.createElement("td");
       col0.textContent = source.vehicle;
       document.getElementById(row).appendChild(col0);
-      
+
       let col1 = document.createElement("td");
       col1.textContent = source.capacity;
       document.getElementById(row).appendChild(col1);
@@ -23,6 +23,17 @@ fetch(requestURL)
       col2.textContent = source.reshalf;
       document.getElementById(row).appendChild(col2);
       
+      let col3 = document.createElement("td");
+      col3.textContent = source.resfull;
+      document.getElementById(row).appendChild(col3);
+
+      let col4 = document.createElement("td");
+      col4.textContent = source.walkhalf;
+      document.getElementById(row).appendChild(col4);
+
+      let col5 = document.createElement("td");
+      col5.textContent = source.walkfull;
+      document.getElementById(row).appendChild(col5);
 
       /*
       let id = "row" + i;
